@@ -13,10 +13,8 @@
   </header>
 
   <nav>
-    <a href="#intro">Introduction</a>
-    <a href="#problem">Problem</a>
-    <a href="#objectives">Objectives</a>
-    <a href="#framework">Framework</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
   </nav>
 
   <section id="intro">
@@ -28,24 +26,6 @@
     </p>
   </section>
 
-  <section id="problem">
-    <h2>Problem Statement</h2>
-    <p>
-      In heavily affected areas, inefficient coordination between residents, relief groups, and government units results in slow relief distribution and duplicated efforts.
-      Communication channels are poor, and data is not centralized.
-      A unified platform is needed to streamline coordination and improve disaster response.
-    </p>
-  </section>
-
-  <section id="objectives">
-    <h2>Objectives</h2>
-    <ul>
-      <li>Track affected areas and analyze data for prioritized response.</li>
-      <li>Monitor evacuation centers and optimize shelter allocation.</li>
-      <li>Oversee available resources such as supplies, volunteers, and personnel in real time.</li>
-    </ul>
-  </section>
-
   <section id="framework">
     <h2>Conceptual Framework</h2>
     <p>
@@ -53,6 +33,17 @@
       Residents can report damages and urgent needs, LGUs can update affected areas, and NGOs can manage available resources.
       These inputs are processed in a centralized database, displayed through a real-time disaster map for faster coordination and better decision-making.
     </p>
+    <button onclick="showMessage()">Click for More Info</button>
+  </section>
+
+  <section id="weather">
+    <h2>Check Weather Status</h2>
+    <p>Enter your city to see the current weather condition:</p>
+    <form id="weatherForm">
+      <input type="text" id="cityInput" placeholder="Enter city name" required />
+      <button type="submit">Check Weather</button>
+    </form>
+    <div id="weatherResult"></div>
   </section>
 
   <footer>
@@ -62,3 +53,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
